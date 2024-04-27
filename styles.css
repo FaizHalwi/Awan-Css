@@ -1,0 +1,88 @@
+body{
+	height: 100vh;
+	background-color: #2975f0;
+	overflow: hidden;
+}
+/*
+.awan.satu{
+	top: 50%;
+	width: 500px;
+	height: 100px;
+}*/
+
+.awan.dua{
+	top: 87%;
+	width: 60px;
+	height: 20px;
+	animation-duration: 10s;
+}
+
+.awan.tiga{
+	top: 95%;
+	width: 120px;
+	height: 40px;
+	animation-duration: 8s;
+}
+
+.awan.empat{
+	top: 89%;
+	width: 100px;
+	height: 40px;
+	animation-duration: 15s;
+}
+
+.awan.lima{
+	top: 85%;
+	width: 100px;
+	height: 40px;
+	animation-duration: 13s;
+}
+
+.awan.enam{
+	top: 90%;
+	width: 100px;
+	height: 40px;
+	animation-duration: 11s;
+}
+
+.awan{
+	position: absolute;
+	left: 0;
+	background: whitesmoke;
+	border-radius: 1000px;
+	animation: zoomies 5s infinite linear;
+}
+
+.awan::before{
+	content: '';
+	position: absolute;
+	top: -80%;
+	left: 10%;
+	width: 50%;
+	height: 150%;
+	background: whitesmoke;
+	border-radius: 50%;
+}
+
+.awan::after{
+	content: '';
+	position: absolute;
+	top: -40%;
+	right: 20%;
+	width: 30%;
+	height: 100%;
+	background: whitesmoke;
+	border-radius: 50%;
+}
+
+@keyframes zoomies{
+	from{
+		left: 0;
+		transform: translateX(-100%);
+	}
+
+	to{
+		left: 100%;
+		transform: translateX(0%);
+	}
+}
